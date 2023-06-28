@@ -67,6 +67,10 @@ button {
 }
 
 .contacts {
+  font-style: normal;
+}
+
+.contacts-item {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.32px;
@@ -87,7 +91,8 @@ button {
 .hero-title {
   font-size: 56px;
   font-weight: 700;
-  line-height: calc(60 / 56);
+  text-align: center;
+  line-height: 1.07;
   letter-spacing: 1.12px;
   color: var(--white-background-color);
 }
@@ -96,6 +101,11 @@ button {
   color: var(--white-background-color);
   background-color: var(--primary-brand-colors);
   border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   /* padding: 16px 32px; */
   /* border-radius: 4px; */
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
@@ -141,9 +151,10 @@ button {
 .title-foto-section {
   font-size: 36px;
   color: var(--dark-color);
-  line-height: calc(40 / 36);
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  line-height: 1.11;
+  text-align: center;
 }
 
 /* Team section */
@@ -156,14 +167,15 @@ button {
   font-size: 36px;
   color: var(--dark-color);
   font-weight: 700;
-  line-height: calc(40 / 36);
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .team-section-list-item {
   /* border-radius: 0px 0px 4px 4px; */
-  width: 264px;
+  /* width: 264px; */
   background: var(--white, #fff);
   /* box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -192,16 +204,17 @@ button {
 }
 
 .footer-logo {
-  color: var(--light-color);
+  color: var(--primary-brand-colors);
   font-size: 18px;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: calc(21 / 18);
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
-.footer-logo > span {
-  color: var(--primary-brand-colors);
+.logo-white {
+  color: #f4f4fd ;
 }
 
 .footer-text {
@@ -234,7 +247,7 @@ button {
 .project-list-item {
   border: 1px solid var(--accent-color);
   background: var(--white-background-color);
-  width: 360px;
+  /* width: 360px; */
   margin: 10px;
 }
 
