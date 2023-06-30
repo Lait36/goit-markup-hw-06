@@ -25,9 +25,6 @@ body {
   text-decoration: none;
 }
 
-/* ul {
-  list-style-type: none;
-} */
 
 button {
   cursor: pointer;
@@ -106,9 +103,6 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* padding: 16px 32px; */
-  /* border-radius: 4px; */
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
 }
 
 .hero-button:hover,
@@ -117,19 +111,6 @@ button {
 }
 
 /* Features Section */
-
-/* .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-} */
 
 .features-title {
   font-size: 20px;
@@ -174,12 +155,7 @@ button {
 }
 
 .team-section-list-item {
-  /* border-radius: 0px 0px 4px 4px; */
-  /* width: 264px; */
   background: var(--white, #fff);
-  /* box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
 }
 
 .team-section-subtitle {
@@ -227,7 +203,6 @@ button {
 /* PORTFOLIO PAGE */
 
 .button {
-  /* border-radius: 4px; */
   border: 1px solid var(--accent-color);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -235,17 +210,13 @@ button {
   background: var(--light-color);
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* padding: 12px 24px; */
   color: var(--primary-brand-colors);
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  /* border-radius: 4px; */
   background: var(--pressed-state-color);
-  /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1); */
   color: var(--white-background-color);
   border: none;
 }
@@ -253,7 +224,6 @@ button {
 .project-list-item {
   border: 1px solid var(--accent-color);
   background: var(--white-background-color);
-  /* width: 360px; */
   margin: 10px;
 }
 
