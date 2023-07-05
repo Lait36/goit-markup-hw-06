@@ -120,6 +120,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--dark-color);
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -150,6 +151,7 @@ button {
 .hero-section {
   background-color: var(--dark-color);
   height: 600px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -189,7 +191,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 188px 0;
 }
 
 /* Strategy Section */
