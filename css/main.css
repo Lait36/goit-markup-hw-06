@@ -348,12 +348,14 @@ button {
 .button:focus {
   background: var(--pressed-state-color);
   color: var(--white-background-color);
+  border: 1px solid transparent;
   border: none;
 }
 
 .project-list-item {
   border: 1px solid var(--accent-color);
   background: var(--white-background-color);
+  width: calc((100% - 48px) / 3);
 }
 
 .project-list-title {
@@ -362,6 +364,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .project-list-text {
@@ -375,11 +378,24 @@ button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 96px 0 72px 0;
+  margin-bottom: 72px;
 }
 
 .project-list{ 
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+}
+
+.project-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
