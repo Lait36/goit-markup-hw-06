@@ -340,6 +340,8 @@ button {
   letter-spacing: 0.04em;
   color: var(--primary-brand-colors);
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -352,7 +354,6 @@ button {
 .project-list-item {
   border: 1px solid var(--accent-color);
   background: var(--white-background-color);
-  margin: 10px;
 }
 
 .project-list-title {
@@ -368,4 +369,17 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 96px 0 72px 0;
+}
+
+.project-list{ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
