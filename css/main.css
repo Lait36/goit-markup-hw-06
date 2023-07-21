@@ -153,6 +153,15 @@ button {
   background-color: var(--dark-color);
   height: 600px;
   padding: 188px 0;
+  min-width: 1140px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -179,6 +188,7 @@ button {
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -201,6 +211,14 @@ button {
   background-color: var(--strategy-icon-bg);
   margin: 0;
   margin-bottom: 8px;
+}
+
+.strategy-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
 }
 
 .strategy {
@@ -283,7 +301,7 @@ button {
 }
 
 .team-info {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-section-subtitle {
@@ -325,6 +343,7 @@ button {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -339,42 +358,53 @@ button {
 /* SECTION CUSTOMERS */
 
 .section-customers {
-  padding-bottom: 120px;
+  padding-bottom: 120px 0;
 }
 
 .customers-title {
+  color: var(--dark-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   text-align: center;
-  margin: 76px;
+  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
   gap: 24px;
+  width: calc((100% - 120px) / 6);
 }
 
 .customers-list-item {
-  border-radius: 4px;
-  border: 1px solid var(--lightslate, #8e8f99);
+  height: 88px;
 }
 
 .customers-link {
   fill: var(--subtle-text-color);
   padding: 16px 32px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(s);
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--pressed-state-color);
+  color: var(--pressed-state-color);
+  border-color: var(--pressed-state-color);
 }
 
 .customers-list-item:hover,
 .customers-list-item:focus {
   border-color: var(--pressed-state-color);
 }
+
 /* Footer */
 
 .footer {
@@ -431,7 +461,15 @@ button {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--success-color);
 }
 
 .social-list {
@@ -442,7 +480,7 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   color: var(--white-background-color);
   margin-bottom: 16px;
 }
