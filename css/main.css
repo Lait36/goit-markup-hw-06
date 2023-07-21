@@ -11,6 +11,7 @@
   --hero-background-color: #2e2f42; /* GRAY */
   --white-background-color: #ffffff; /* WHITE */
   --modal-background-color: #fcfcfc; /* DAIRY */
+  --strategy-icon-bg: #f4f4fd; /* CLOUD */
 }
 
 /* Global styles */
@@ -195,6 +196,13 @@ button {
 
 /* Strategy Section */
 
+.strategy-icon {
+  padding: 24px 100px;
+  background-color: var(--strategy-icon-bg);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
 .strategy {
   padding: 120px 0;
 }
@@ -269,6 +277,9 @@ button {
   background: var(--white, #fff);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-info {
@@ -291,17 +302,92 @@ button {
   line-height: calc(24 / 16);
   letter-spacing: 0.32px;
   text-align: center;
+  margin: 8px;
+}
+
+.team-social-list {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-list-link {
+  display: flex;
+  fill: var(--light-color);
+  background-color: var(--primary-brand-colors);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--pressed-state-color);
 }
 
 .team-list {
   gap: 24px;
 }
 
+/* SECTION CUSTOMERS */
+
+.section-customers {
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 76px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-list-item {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+}
+
+.customers-link {
+  fill: var(--subtle-text-color);
+  padding: 16px 32px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--pressed-state-color);
+}
+
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border-color: var(--pressed-state-color);
+}
 /* Footer */
 
 .footer {
   background-color: var(--dark-color);
   padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-text {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -326,6 +412,39 @@ button {
   letter-spacing: 0.32px;
   color: var(--light-color);
   width: 264px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  fill: var(--light-color);
+  background-color: var(--primary-brand-colors);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.social-list {
+  gap: 16px;
+}
+
+.social-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--white-background-color);
+  margin-bottom: 16px;
 }
 
 /* PORTFOLIO PAGE */
@@ -380,7 +499,7 @@ button {
   margin-bottom: 72px;
 }
 
-.project-list{ 
+.project-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -397,4 +516,51 @@ button {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  display: flex;
+}
+
+.modal {
+  width: 408px;
+  min-height: 584px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--modal-background-color);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-close-btn {
+  border-radius: 50%;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.modal-icon {
+  fill: #2e2f42;
+  background-color: #e7e9fc;
 }
