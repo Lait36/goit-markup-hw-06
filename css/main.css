@@ -426,7 +426,7 @@ button {
 }
 
 .customers-icon {
-  fill:currentColor
+  fill: currentColor;
 }
 
 .customers-link:hover,
@@ -601,6 +601,8 @@ button {
   top: 0;
   background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   display: flex;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -614,6 +616,7 @@ button {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -623,6 +626,9 @@ button {
 }
 
 .modal-close-btn {
+  /* background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
   border-radius: 50%;
   border: none;
   background: none;
@@ -630,11 +636,32 @@ button {
   justify-content: center;
   align-items: center;
   position: absolute;
+  top: 50%;
+  right: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover, .modal-close-btn:focus {
+  background-color: #404bbf;
+  fill: #ffffff
 }
 
 .modal-icon {
-  fill: #2e2f42;
-  background-color: #e7e9fc;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
