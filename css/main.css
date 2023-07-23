@@ -367,7 +367,7 @@ button {
   display: flex;
   fill: var(--light-color);
   background-color: var(--primary-brand-colors);
-  color: var(--subtle-text-color);
+  color: var(--light-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -386,7 +386,7 @@ button {
 }
 
 .svg-icon {
-  fill: var(--strategy-icon-bg);
+  /* fill: var(--strategy-icon-bg); */
   fill: currentColor;
 }
 
