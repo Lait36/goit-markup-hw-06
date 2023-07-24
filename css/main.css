@@ -228,6 +228,7 @@ button {
   justify-content: center;
   flex-direction: column;
   padding: 188 472 188 472;
+  max-width: 1140px;
 }
 
 /* Strategy Section */
