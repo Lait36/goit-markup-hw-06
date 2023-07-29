@@ -874,7 +874,6 @@ button {
 }
 
 .check-text {
-  display: inline-flex;
   align-items: center;
   fill: transparent;
 }
