@@ -473,9 +473,8 @@ button {
   align-items: center;
   flex-direction: column;
   /* width: 398px; */
-  display: flex;
   flex-wrap: nowrap;
-  gap: 72px;
+  /* gap: 72px; */
 }
 
 .footer-logo {
@@ -506,6 +505,10 @@ button {
   /* text-align: center; */
 }
 
+.footer-text-container {
+  margin-bottom: 72px;
+}
+
 .social-container {
   /* display: flex; */
   /* justify-content: center; */
@@ -513,6 +516,7 @@ button {
   /* flex-direction: column; */
   /* margin-right: 80px; */
   /* width: 100%; */
+  margin-bottom: 72px;
 }
 
 .footer-social-item {
@@ -552,7 +556,8 @@ button {
 }
 
 .subscribe-container {
-  width: 350px;
+  width: 320px;
+  padding: 0 15px;
 }
 
 .footer-form {
@@ -584,6 +589,7 @@ button {
   padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   margin-bottom: 16px;
+  opacity: 0.6;
 }
 
 .email-input::placeholder {
@@ -1009,6 +1015,11 @@ button {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
+    max-width: 582px;
+  }
+
+  .footer-text-container {
+    margin-right: 24px;
   }
 
   .social-container {
@@ -1024,7 +1035,11 @@ button {
   }
 
   .subscribe-title {
- text-align: start;
+    text-align: start;
+  }
+
+  .subscribe-container {
+    padding: 0;
   }
 }
 
@@ -1082,5 +1097,17 @@ button {
 
   .customers-list-item {
     width: calc((100% - 120px) / 6);
+  }
+
+  /* Footer */
+
+  .footer-text-container {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+
+  .social-container {
+    margin-bottom: 0;
+    margin-right: 80px;
   }
 }
