@@ -20,7 +20,7 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
@@ -35,9 +35,14 @@
             </li>
             <li><a href="" class="nav-link link">Contacts</a></li>
           </ul>
+          <button type="button" class="mob-menu-open js-open-menu">
+            <svg width="33" height="22" class="nav-icon">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
         </nav>
         <address class="contacts">
-          <ul class="list header-list">
+          <ul class="list header-list address-list">
             <li>
               <a href="mailto:info@devstudio.com" class="contacts-item link"
                 >info@devstudio.com</a
@@ -51,16 +56,80 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mob-menu js-menu-container">
+        <div class="nav-container">
+          <button type="button" class="mob-menu-close js-close-menu">
+            <svg width="8" height="8" class="modal-icon">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="list mob-nav-list">
+            <li>
+              <a href="./index.html" class="mob-nav-link mob-current link">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mob-nav-link link">Portfolio</a>
+            </li>
+            <li><a href="" class="mob-nav-link link">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="nav-container">
+          <address class="mob-address">
+            <ul class="list mob-contacts-list">
+              <li>
+                <a href="tel:+110001111111" class="mob-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list mob-social-list">
+            <li class="mob-social-item">
+              <a href="@" class="mob-social-link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a href="@" class="mob-social-link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a href="@" class="mob-social-link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a href="@" class="mob-social-link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="strategy">
         <div class="container strategy-container">
           <h2 class="visually-hidden">Features</h2>
@@ -437,7 +506,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="overlay is-hidden" data-modal>
+    <div class="overlay is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg width="8" height="8" class="modal-icon">
@@ -521,7 +590,9 @@
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
